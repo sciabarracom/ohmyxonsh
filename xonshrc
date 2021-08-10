@@ -2,7 +2,7 @@ def _vz(args):
   pushd $HOME/.ohmyxonsh
   $file = args[0]+".xsh" if len(args) >0 else "xonshrc"
   vi $file
-  git add *
+  git add xonshrc *.xsh
   git commit -m "edit $file" -a
   popd
   source $HOME/.xonshrc
