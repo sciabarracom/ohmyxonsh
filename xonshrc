@@ -1,0 +1,19 @@
+def _vz(args):
+  pushd $HOME/.ohmyxonsh
+  $file = args[0]+".xsh" if len(args) >0 else "xonshrc"
+  vi $file
+  git add *
+  git commit -m "edit $file" -a
+  popd
+  source $HOME/.xonshrc
+
+aliases |= { 
+  "vz": _vz, 
+  "gst": "git status" ,
+  "nai":  "nim action invoke",
+  "nagu": "nim action get --url",
+  "nvl":  "nim activation list",
+  "nvg":  "nim activations logs",
+  "nvr":  "nim activations result",
+} 
+
