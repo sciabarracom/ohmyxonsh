@@ -16,6 +16,8 @@ def _vzpush(args):
 aliases |= { 
   "vz": _vz,
   "vzpush": _vzpush,
+  "l": "ls",
+  "ll": "ls -l",
   "gst": "git status" ,
   "nai":  "nim action invoke",
   "nagu": "nim action get --url",
