@@ -4,6 +4,7 @@ def _vz(args):
   vi $file
   git add xonshrc *.xsh
   git commit -m "edit $file" -a
+  git pull origin main
   git push origin main
   popd
   source $HOME/.xonshrc
