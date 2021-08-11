@@ -1,3 +1,5 @@
+xontrib load prompt_bar
+
 def _vz(args):
   pushd $HOME/.ohmyxonsh
   $file = args[0]+".xsh" if len(args) >0 else "xonshrc"
@@ -7,7 +9,7 @@ def _vz(args):
 
 def _vzpush(args):
   pushd $HOME/.ohmyxonsh
-  git add xonshrc *.xsh
+  git add xonshrc init *.xsh
   git commit -m "edit $file" -a
   git pull origin main
   git push origin main
@@ -23,3 +25,4 @@ aliases |= {
 for i in $(echo $HOME/.ohmyxonsh/*.xsh).split():
   print("loading %s" %i)
   source @(i)
+
