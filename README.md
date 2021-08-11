@@ -1,11 +1,13 @@
 # ohmyxonsh
 Oh My collection of Xhonsh hacks
 
+Works on Linux/OSX  and hopefully on Windows Bash (but untested there..)
+
 Install:
 
 ```
 git clone https://<token>@gituhub.com/<user>/ohmyxonsh $HOME/.ohmyxonsh
 cd $HOME/.ohmyxonsh
-./setup-<your-distr>.sh
+./setup.sh
 ```
 
