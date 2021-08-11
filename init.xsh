@@ -1,28 +1,29 @@
 xontrib load prompt_bar
 
-def _vz(args):
+def _vx(args):
   pushd $HOME/.ohmyxonsh
   $file = args[0]+".xsh" if len(args) >0 else "xonshrc"
   vi $file
   source $HOME/.xonshrc
   popd
 
-def _vzpush(args):
+def _vxsync(args):
   pushd $HOME/.ohmyxonsh
-  git add xonshrc init *.xsh
+  git add xonshrc *.xsh
   git commit -m "edit $file" -a
   git pull origin main
   git push origin main
   popd
 
 aliases |= { 
-  "vz": _vz,
-  "vzpush": _vzpush,
+  "vx": _vx,
+  "vxsync": _vxsync,
   "l": "ls",
   "ll": "ls -l",
 } 
 
 for i in $(echo $HOME/.ohmyxonsh/*.xsh).split():
-  print("loading %s" %i)
-  source @(i)
+  if not i.endswith("init.xsh"):
+    print("loading %s" %i)
+    source @(i)
 
