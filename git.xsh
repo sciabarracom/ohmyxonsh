@@ -1,0 +1,4 @@
+aliases |= { 
+  "gst": "git status" ,
+} 
+
