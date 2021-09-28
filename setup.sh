@@ -3,6 +3,8 @@ cd "$(dirname $0)"
 if ! fgrep init.src ~/.bashrc
 then echo source $PWD/init.src >>~/.bashrc
 fi
+git config --global user.email "michele@sciabarra.com"
+git config --global user.name "Michele Sciabarra"
 if ! which brew ; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 if
@@ -20,4 +22,6 @@ fi
 if which goenv
 then brew install goenv
 fi
-
+if ! test -d $HOME/.jenv
+then git clone https://github.com/jenv/jenv.git ~/.jenv
+fi

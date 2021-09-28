@@ -1,7 +1,7 @@
 # ohmyxonsh
 Oh My collection of Xhonsh hacks
 
-Works on Linux/OSX  and hopefully on Windows Bash (but untested there..)
+Works on Linux/OSX and hopefully on Windows WSL (but untested there..)
 
 Install:
 
