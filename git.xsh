@@ -6,7 +6,6 @@ aliases |= {
   "gco": "git checkout",
   "gc": "git commit",
   "gcam": "git commit -a -m",
-  "gcmsg": "git commit -m" 
-
+  "gcmsg": "git commit -m", 
 } 
 

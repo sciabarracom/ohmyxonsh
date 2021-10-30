@@ -23,5 +23,8 @@ aliases |= {
   "ll": "ls -l",
 } 
 
-
+for i in $(echo $HOME/.ohmyxonsh/*.xsh).split():
+  if not i.endswith("init.xsh"):
+    print("loading %s" %i)
+    source @(i)
 
