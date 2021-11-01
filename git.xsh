@@ -1,3 +1,8 @@
+
+def _gpush(args):
+    cur = $(git rev-parse --abbrev-ref HEAD).strip()
+    git push origin @(cur)
+
 aliases |= { 
   "g": "git",
   "gst": "git status",
@@ -7,5 +12,6 @@ aliases |= {
   "gc": "git commit",
   "gcam": "git commit -a -m",
   "gcmsg": "git commit -m", 
+  "gpush": _gpush,
 } 
 
