@@ -3,6 +3,6 @@ if ~/.ssh/.secrets
 then source ~/.ssh/.secrets
 fi
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+#eval "$(jenv init -)"
 eval "$(nodenv init -)"
 xonsh
