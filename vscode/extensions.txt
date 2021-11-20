@@ -1,0 +1,7 @@
+# Mac
+export DIR="$HOME/Library/Application Support/Code/User" ; cp keybindings.json "$DIR"
+cp settings.json $DIRy
+code --install-extension marp-team.marp-vscode
+code --install-extension brijeshb42.vscode-excalidraw
+
+
