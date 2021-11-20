@@ -1,0 +1,12 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.terminal.runSelectedText"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "multiCommand.execToEol",
+        "when": "editorFocus && !findWidgetVisible"
+    }
+]

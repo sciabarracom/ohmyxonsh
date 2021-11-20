@@ -1,0 +1,13 @@
+{
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.execToEol",
+            "sequence": [
+                "cursorEndSelect",
+                "workbench.action.terminal.runSelectedText",
+                "cursorLeft",
+                "cursorDown"
+            ]
+        }
+    ]
+}
