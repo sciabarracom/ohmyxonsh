@@ -25,6 +25,3 @@ fi
 if ! which goenv
 then brew install goenv
 fi
-if ! test -d $HOME/.jenv
-then git clone https://github.com/jenv/jenv.git ~/.jenv
-fi

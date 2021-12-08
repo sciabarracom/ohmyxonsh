@@ -1,7 +1,6 @@
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if test -d /home/linuxbrew
+then eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 if ~/.ssh/.secrets
 then source ~/.ssh/.secrets
 fi
-export PATH="$HOME/.jenv/bin:$PATH"
-#eval "$(jenv init -)"
-eval "$(nodenv init -)"
